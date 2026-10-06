@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#356D3B">
+  <meta name="description" content="Con Nonna Rosetta scopri ricette della Tuscia, borghi da visitare e il detto del giorno.">
+  <title>Nonna Rosetta · Ogni sapore, una storia</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <svg class="wood-background" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="wood" width="1586" height="60" patternUnits="userSpaceOnUse"><image href="Navigazione/Home Page/Home_Page_Chat_Nascosta.png" width="1586" height="992" y="-932"/></pattern></defs><rect width="100%" height="100%" fill="url(#wood)"/></svg>
+  <div class="app-shell">
+    <aside class="sidebar paper" aria-label="Navigazione principale">
+      <button type="button" class="brand" id="brand-toggle" aria-label="Mostra il ritratto di Nonna Rosetta" aria-pressed="false"><span class="brand-medal" aria-hidden="true"><span class="brand-face brand-front"></span><span class="brand-face brand-back"></span></span><span class="brand-caption">Sapori e storie<br>della Tuscia.</span></button>
+      <nav class="primary-nav"><a href="#home" data-page="home"><span class="material-symbols-outlined" aria-hidden="true">home</span><span>Home</span></a><a href="#ricette" data-page="ricette"><span class="recipe-icon" aria-hidden="true"><span class="material-symbols-outlined">restaurant</span></span><span>Ricette</span></a><a href="#borghi" data-page="borghi"><span class="material-symbols-outlined" aria-hidden="true">map</span><span>Borghi</span></a></nav>
+      <nav class="secondary-nav" aria-label="Account e supporto"><button data-info="profilo"><span class="material-symbols-outlined" aria-hidden="true">account_circle</span><span>Profilo</span></button><button data-info="impostazioni"><span class="material-symbols-outlined" aria-hidden="true">settings</span><span>Impostazioni</span></button><button data-info="assistenza"><span class="material-symbols-outlined" aria-hidden="true">help</span><span>Assistenza</span></button></nav>
+      <button class="login" data-info="accesso"><span class="material-symbols-outlined" aria-hidden="true">login</span><span>Accedi</span></button>
+    </aside>
+    <main id="main" tabindex="-1">
+      <header class="page-header paper"><div><p class="eyebrow" id="header-kicker" hidden></p><h1 id="header-title">La Tuscia, da assaporare.</h1><p id="header-subtitle" hidden></p></div><div class="language" aria-label="Lingua"><span aria-label="Italiano selezionato">IT</span><span aria-hidden="true">/</span><button data-info="lingua" lang="en" aria-label="English language availability">EN</button></div></header>
+      <div class="content-layout" id="content-layout">
+        <section class="guide-panel paper" aria-label="Parla con Nonna Rosetta">
+          <button class="mode-switch" id="mode-switch" aria-controls="avatar-view chat-view" aria-pressed="false"><span id="switch-label">Passa alla chat testuale</span><span class="material-symbols-outlined" aria-hidden="true">flip_camera_android</span></button>
+          <div class="avatar-view" id="avatar-view"><div class="avatar-art"><svg viewBox="232 190 370 652" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Nonna Rosetta ti accoglie nella sua cucina"><image href="Navigazione/Home Page/Home_Page_Chat_Nascosta.png" width="1586" height="992"/></svg><span class="avatar-greeting">La tua guida nella Tuscia.</span></div><div class="voice-controls"><button class="microphone" id="voice-button" aria-label="Parla con Nonna Rosetta"><span class="material-symbols-outlined" aria-hidden="true">mic</span></button><span>Ti va di scoprire la Tuscia con me?</span></div></div>
+          <div class="chat-view" id="chat-view" hidden><div class="chat-heading"><h2>Parliamo con Rosetta</h2><p><span class="status-dot"></span>La tua guida nella Tuscia <span class="demo-label">Demo</span></p></div><div class="messages" id="messages" role="log" aria-live="polite" aria-label="Conversazione con Rosetta"></div><div class="chat-suggestions" id="chat-suggestions"><button data-prompt="Cosa cuciniamo oggi?">Cosa cuciniamo?</button><button data-prompt="Consigliami un borgo della Tuscia">Un borgo della Tuscia</button></div><form class="chat-form" id="chat-form"><label class="sr-only" for="chat-input">Scrivi a Nonna Rosetta</label><input id="chat-input" placeholder="Scrivi qui…" maxlength="600" autocomplete="off" required><button type="submit" aria-label="Invia messaggio"><span class="material-symbols-outlined" aria-hidden="true">send</span></button></form><p class="chat-disclaimer">Conversazione dimostrativa · risposte predefinite</p></div>
+        </section>
+        <section class="calendar paper" id="calendar" aria-labelledby="calendar-label"><div class="calendar-label"><p class="eyebrow" id="calendar-label">Un giorno nella Tuscia</p></div><time id="calendar-date"><span id="month">Ottobre</span><strong id="day">5</strong><span id="weekday">Lunedì</span></time><p class="eyebrow saying-label">Detto del giorno</p><blockquote>Chi dorme<br>nun pija <em>pesci.</em></blockquote><p class="saying-question">Vuoi sapere cosa significa?</p><button class="button calendar-ask" id="explain-saying"><span class="material-symbols-outlined" aria-hidden="true">chat_bubble</span><span>Chiedi a Rosetta il significato</span></button><p class="calendar-footnote">Un piccolo pensiero dalla Tuscia.</p></section>
+        <section class="home-discovery" id="home-discovery" aria-label="Scopri ricette e borghi">
+          <article class="feature-card recipe-feature paper"><div class="feature-heading"><h2>Il ricettario di Rosetta</h2><p>Le ricette della nostra Tuscia</p></div><div class="feature-card-body"><p class="eyebrow">Piatto del giorno</p><h3>Lombrichelli<br>alla viterbese</h3><p class="feature-description">Ingredienti semplici. Il sapore di casa.</p></div><a class="button red" href="#ricette">Apri il ricettario <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></article>
+          <article class="feature-card village-feature paper"><div class="feature-heading"><h2>Un borgo della Tuscia</h2><p>Un luogo diverso da scoprire ogni volta.</p></div><div class="feature-card-body"><p class="eyebrow">Un borgo da scoprire</p><h3 id="featured-village-name">Sutri</h3><p class="feature-description" id="featured-village-description">Pietra, vicoli e storie da incontrare.</p></div><a class="button" href="#borghi">Esplora i borghi <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a></article>
+        </section>
+        <section class="directory" id="directory" hidden aria-label="Esplora"><div class="directory-tools paper"><label class="search-field"><span class="material-symbols-outlined" aria-hidden="true">search</span><input type="search" id="search-input" placeholder="Cerca una ricetta" aria-label="Cerca una ricetta"></label><div class="filter-row" id="filters" aria-label="Filtra risultati"></div></div><div class="directory-results" id="directory-results"></div><p class="empty-results paper" id="empty-results" hidden>Nessun risultato. Prova con un altro nome.</p></section>
+      </div>
+    </main>
+  </div>
+  <nav class="mobile-nav" aria-label="Navigazione mobile"><a href="#home" data-page="home"><span class="material-symbols-outlined" aria-hidden="true">home</span>Home</a><a href="#ricette" data-page="ricette"><span class="recipe-icon" aria-hidden="true"><span class="material-symbols-outlined">restaurant</span></span>Ricette</a><a href="#borghi" data-page="borghi"><span class="material-symbols-outlined" aria-hidden="true">map</span>Borghi</a><button data-info="profilo"><span class="material-symbols-outlined" aria-hidden="true">account_circle</span>Profilo</button></nav>
+  <dialog id="detail-dialog" class="paper"><button class="dialog-close" id="dialog-close" aria-label="Chiudi"><span class="material-symbols-outlined" aria-hidden="true">close</span></button><div id="dialog-content"></div></dialog>
+</body>
+</html>
